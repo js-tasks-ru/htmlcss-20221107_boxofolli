@@ -1,101 +1,62 @@
 /* Стилизация кнопки */
-:root {
-    --color-prim: #4263EB;
-    --color-second: #7048E8;
-    --color-prim-hover: #2342C0;
-    --color-second-hover: #5028C6;
-    --color-prim-disab: #4263EB;
-    --color-second-disab: #7048E8;
-    --radius-border: 8px;
-    --color-font: #fff;
-    --fsize: 16px;
-    --color-alt-font: #495057;
-}
-  
-.c-button-pr {
-    appearance: none;
-    border: 0;
-    border-radius: var(--radius-border);
-    background: var(--color-prim);
-    color: var(--color-font);
-    position: absolute;
-    left: 5.00%;
-    right: 34.7%;
-    top: 31.25%;
-    bottom: 29.17%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--fsize);
-    line-height: 18.75px;
-    text-align: center;
+.с-button {
+  --butheight: 48px;
+  --lin-height: 19px;
+  --fsize: 16px;
+  --radius-border: 8px;
+  --aligntext: center;
+  border: 0;
+  border-radius: var(--radius-border);
+  font-style: normal;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: var(--fsize);
+  line-height: var(--lin-height);
+  text-align: var (--aligntext);
+  height: var(--butheight);
+  padding: 0 69px;
+  color: white;
 }
 
-.c-button-pr:hover {
-    background: var(--color-prim-hover);
-  }
-
-.c-button-pr:disabled {
-    background: var(--color-prim-disab);
-    opacity: 0.5;
-    left: 18.00%;
-  }
-
-.c-button-sec {
-    appearance: none;
-    border: 0;
-    border-radius: var(--radius-border);
-    background: var(--color-second);
-    color: var(--color-font);
-    position: absolute;
-    left: 31.00%;
-    right: 34.7%;
-    top: 31.25%;
-    bottom: 29.17%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--fsize);
-    line-height: 18.75px;
-    text-align: center;
+.c-button_pr {
+  background: #4263EB;
 }
 
-.c-button-sec:hover {
-    background: var(--color-second-hover);
-  }
-
-.c-button-sec:disabled {
-    background: var(--color-second-disab);
-    opacity: 0.5;
-    left: 44.00%;
-  }
-
-.c-button-alt {
-    appearance: none;
-    border: 0;
-    border-radius: var(--radius-border);
-    box-sizing: border-box;
-    border: 1px solid #ACB5BD;
-    background: white;
-    color: var(--color-alt-font);
-    position: absolute;
-    left: 57.00%;
-    right: 34.7%;
-    top: 31.25%;
-    bottom: 29.17%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--fsize);
-    line-height: 18.75px;
-    text-align: center;
+.c-button_pr:hover {
+  background: #2342C0;
 }
 
-.c-button-alt:hover {
-    border: 1px solid #212429;
-  }
+.c-button_pr:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
-.c-button-alt:disabled {
-    border: 1px solid #ACB5BD;
-    left: 70.00%;
+.c-button_sec {
+  background: #7048E8;
+}
+
+.c-button_sec:hover {
+  background: #5028C6;
+}
+
+.c-button_sec:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.c-button_alt {
+  box-sizing: border-box;
+  border: 1px solid #ACB5BD;
+  background: white;
+  color: #495057;
+}
+
+.c-button_alt:hover {
+  border: 1px solid #212429;
+}
+
+.c-button_alt:disabled {
+  border: 1px solid #ACB5BD;
+  pointer-events: none;
+  opacity: 0.5;
 }
